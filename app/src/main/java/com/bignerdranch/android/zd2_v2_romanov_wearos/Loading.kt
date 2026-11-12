@@ -41,20 +41,15 @@ class Loading : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        view.postDelayed({
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container_view, LoginFragment())
+                .commit()
+        }, 2000)
 
-       Handler(view)
     }
 
-    fun Handler(view: View)
-    {
-        Thread.sleep(2000)
 
-        val fragmentTransaction: FragmentTransaction = parentFragmentManager.beginTransaction()
-
-
-        fragmentTransaction.replace(R.id.fragment_container_view, LoginFragment())
-        fragmentTransaction.commit()
-    }
 
 
 

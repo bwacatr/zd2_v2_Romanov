@@ -20,7 +20,7 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                android:id="@+id/buttonDiscussion"
+                android:id="@+id/Discussion"
                 android:layout_width="56dp"
                 android:layout_height="56dp"
                 android:layout_centerHorizontal="true"
@@ -31,7 +31,8 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-                    android:background="@drawable/vector1" />
+                    android:background="@drawable/vector1"
+                    android:id="@+id/buttonDiscussion"/>
 
 
             </RelativeLayout>
@@ -39,7 +40,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/buttonDiscussion"
+                android:layout_below="@id/Discussion"
                 android:lineHeight="16px"
                 android:text="Обсуждения"
                 android:textAlignment="center"
@@ -61,7 +62,7 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                android:id="@+id/buttonDiscussion1"
+                android:id="@+id/Discussion1"
                 android:layout_width="56dp"
                 android:layout_height="56dp"
                 android:layout_centerHorizontal="true"
@@ -72,7 +73,8 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-                    android:background="@drawable/vector3" />
+                    android:background="@drawable/vector3"
+                    android:id="@+id/buttonDiscussion1"/>
 
 
             </RelativeLayout>
@@ -80,7 +82,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/buttonDiscussion1"
+                android:layout_below="@id/Discussion1"
                 android:lineHeight="16px"
                 android:text="Обсуждения"
                 android:textAlignment="center"
@@ -101,7 +103,7 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                android:id="@+id/buttonDiscussion2"
+                android:id="@+id/Favorites"
                 android:layout_width="56dp"
                 android:layout_height="56dp"
                 android:layout_centerHorizontal="true"
@@ -112,7 +114,8 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-                    android:background="@drawable/vector2" />
+                    android:background="@drawable/vector2"
+                    android:id="@+id/buttonFavorites"/>
 
 
             </RelativeLayout>
@@ -120,7 +123,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/buttonDiscussion2"
+                android:layout_below="@id/Favorites"
                 android:lineHeight="16px"
                 android:text="Избранное"
                 android:textAlignment="center"

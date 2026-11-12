@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageButton
+import androidx.fragment.app.FragmentTransaction
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +24,10 @@ class MainFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private lateinit var buttonDiscussions1: View
+    private lateinit var buttonDiscussions2: View
+    private lateinit var buttonFavorite: View
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -35,6 +42,45 @@ class MainFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        buttonDiscussions1 = view.findViewById(R.id.buttonDiscussion)
+        buttonDiscussions2 = view.findViewById(R.id.buttonDiscussion1)
+
+        buttonFavorite = view.findViewById(R.id.buttonFavorites)
+
+        buttonDiscussions1.setOnClickListener {
+            btnDisc(view)
+        }
+
+        buttonDiscussions2.setOnClickListener {
+            btnDisc(view)
+        }
+
+        buttonFavorite.setOnClickListener {
+            btnFav(view)
+        }
+    }
+
+    fun btnDisc(view: View)
+    {
+        val fragmentTransaction: FragmentTransaction = parentFragmentManager.beginTransaction()
+
+        fragmentTransaction.replace(R.id.fragment_container_view, DiscussionFragment())
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
+    }
+
+    fun btnFav(view: View)
+    {
+        val fragmentTransaction: FragmentTransaction = parentFragmentManager.beginTransaction()
+
+        fragmentTransaction.replace(R.id.fragment_container_view, FavoritesFragment())
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
     }
 
     companion object {
