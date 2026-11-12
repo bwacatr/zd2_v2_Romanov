@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/Container1"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/buttonDiscussion"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/vector1" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonDiscussion"
+                android:lineHeight="16px"
+                android:text="Обсуждения"
+                android:textAlignment="center"
+                android:textFontWeight="400"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/Container2"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="24dp"
+            android:layout_toRightOf="@id/Container1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/buttonDiscussion1"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/vector3" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonDiscussion1"
+                android:lineHeight="16px"
+                android:text="Обсуждения"
+                android:textAlignment="center"
+                android:textFontWeight="400"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Container3"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/Container1"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/buttonDiscussion2"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/vector2" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonDiscussion2"
+                android:lineHeight="16px"
+                android:text="Избранное"
+                android:textAlignment="center"
+                android:textFontWeight="400"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
