@@ -112,7 +112,7 @@ class LoginFragment : Fragment() {
             {
                 val alert = AlertDialog.Builder(requireContext())
                     .setTitle("Ошибка")
-                    .setMessage("Пароль должен быть больше 6")
+                    .setMessage("Пароль должен быть >= 6")
                     .setPositiveButton("OK",null)
                     .create()
                     .show()
