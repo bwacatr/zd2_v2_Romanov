@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlin.apply
 
 
-class MovieAdapter1(
+class для MovieAdapter1(
     val movies : MutableList<Movie>
 ) : RecyclerView.Adapter<MovieAdapter1.MovieViewHolder>()
 {
